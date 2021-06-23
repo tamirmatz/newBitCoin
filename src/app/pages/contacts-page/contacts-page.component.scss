@@ -1,0 +1,21 @@
+.contacts-fliter{
+    text-align: center;
+}
+.add-contact{
+    background-color: rgba(255, 149, 0, 0.866);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;    
+    position: fixed;
+    bottom: 85px;
+    align-items: center;
+    justify-content: center;
+    right: 40px;
+    font-size: 2rem;
+    color: rgb(52, 52, 52);
+    &:hover{
+        background-color: rgba(255, 149, 0, 1);
+        transition: .6s;
+    }
+}

@@ -1,0 +1,8 @@
+<div class="home-page">
+  <h1 *ngIf="user">hello {{user.name}}</h1>
+  <img src="../../../assets/icons/coins.png" alt=""> 
+  <p class="mgb-1">Coins: {{user.coins}}</p>
+  <img src="../../../assets/icons/bitcoin.png" alt=""> 
+  <p class="mgb-1">BTC: {{currancy$ | async}}</p>
+  <move-list></move-list>
+</div>

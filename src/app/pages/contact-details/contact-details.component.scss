@@ -1,0 +1,30 @@
+
+.contact-details{
+    background-color: orange;
+    border-radius: 15px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 30px;
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        .contact-img{
+            margin-top: 2rem;
+            height: 10rem;
+        }
+        align-items: center;
+        text-align: center;
+    }
+    .detail-actions{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon{
+        height: 3rem;
+        cursor: pointer;
+    }
+    .msg{
+        color: red;
+    }
+}

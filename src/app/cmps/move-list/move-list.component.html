@@ -1,0 +1,6 @@
+<div class="move-list">
+    <h1 *ngIf="moves.length>0">Your Moves</h1>
+    <div *ngFor="let move of moves">
+        <p>You transfered {{move.amount}} coins to {{move.to}} at {{move.at}}</p>
+    </div>
+</div>

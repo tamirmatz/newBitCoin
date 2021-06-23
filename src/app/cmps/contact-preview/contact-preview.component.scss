@@ -1,0 +1,20 @@
+.contact-preview {
+  padding: 10px;
+  box-shadow: 0 0px 2px 1px #00000038;
+  margin: 10px;
+  display:flex;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: orange;
+  &:hover{
+    background-color: rgba(255, 166, 0, 0.8);
+    cursor: pointer;
+  }
+}
+.contact-img{
+  border-radius: 50%;
+  height: 80px;
+  margin-right: 10px;
+}

@@ -1,0 +1,18 @@
+<div *ngIf="contact" class="contact-details">
+    <div class="detail-actions">
+        <div (click)="onBack()"><img class="icon" src="../../../assets/icons/back.png"></div>
+        <a [routerLink]="['/contact',contact._id,'edit']"><img class="icon"src="../../../assets/icons/edit.png"></a>
+        <div class="icon" (click)="onDeleteContact()"><img src="../../../assets/icons/delete.png"></div>
+    </div>
+    <div class="contact-info">
+        <div *ngIf="contact">
+            <img class="contact-img" src="../../../assets/icons/contact.png"> 
+            <p>Name: {{contact.name}}</p>
+            <p>Phone: {{contact.phone}}</p>
+            <p>email: {{contact.email}}</p>
+        </div>
+        <transfer-fund (onTransfer)="onTransfer($event)" [contactName]="contact.name"></transfer-fund>
+        <p class="msg" *ngIf="notEnoughCoins">Not Enough Coins!</p>
+        <move-list></move-list>
+    </div>
+</div>

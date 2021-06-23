@@ -1,0 +1,9 @@
+<form *ngIf="contact" class="contact-edit-page" (ngSubmit)="onSaveContact()">
+    <label for="name">Name</label>
+    <input id="name" type="text" [(ngModel)]="contact.name" name="name">
+    <label for="tel">Phone</label>
+    <input id="age" type="text" [(ngModel)]="contact.phone" name="phone">
+    <label for="email">Email</label>
+    <input id="email" type="email" [(ngModel)]="contact.email" name="email">
+    <button>Save</button>
+  </form>
